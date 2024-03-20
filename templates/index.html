@@ -2,8 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rendering Local Images Using Flask</title>
+    <title>Hello!</title>
 </head>
 <body>
+    <h3>Hello, this is an app for Unattended Automated Installation class. You can find an image printed below</h3>
+
+<img src="{{ url_for('static', filename='images/cloud1.jpeg') }}" class="image" />
+
+<h3>Bye</h3>
+
+<img
+  src="{{ url_for('static', filename='images/bye.jpg') }}"
+  class="image"
+/>
+
+<style>
+  .image {
+    width: 200px;
+  }
+</style>
+
 </body>
 </html>
